@@ -173,24 +173,21 @@ button{
 
 @media(max-width:500px){
     .movies_container{
-        padding-top: 90px;
-        width:95vw;
+        margin-top: 90px;
+        max-width:100vw;
         height: 100vh auto;
         padding: 0px;
         margin-left: 0px;
-       position: relative;
-       left: 50%;
-       top: 0;
-       transform: translate(-50%,0);
+      
+      
         height: 100%;
     }
     .all_movies{
         width: 100%;
         padding: 0px;
         margin: 0px;
-        /* border: 7px solid green; */
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
     }
     .movies{
         width:170px;
@@ -209,11 +206,9 @@ button{
     .image_container{
         width:100%;
         height: 280px;
-        /* border: 2px solid red; */
     }
     .btn-container{
        max-width:90vw ;
-        /* padding: 3px; */
         display:flex;
         align-items: center;
         justify-content: center;
@@ -245,3 +240,33 @@ button{
         width: 95%;
     }
 }
+
+
+
+@media(max-width:800px){
+    .movies_container{
+        margin-top: 90px;
+        max-width:100vw;
+        height: 100vh auto;
+        padding: 0px;
+        margin-left: 0px;
+        height: 100%;
+    }
+    .all_movies{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .movies{
+        width:170px;
+        height:140px auto;
+        padding: 0px;
+        border: none;
+        margin: 5px;
+        margin-top: 15px;
+    }
+
+}
+
