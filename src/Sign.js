@@ -9,7 +9,7 @@ import './Navbar.css'
 import { auth } from "./firebase";
 import {  createUserWithEmailAndPassword , signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom"
-import mobile from './Images/IN-en-20240115-trifectadaily-perspective_alpha_website_small.jpg'
+import mobile from './Images/IN-en-20240115-trifectadaily-perspective_alpha_website_medium.jpg'
 import FooterLinks from './Footer'
 
 function SignIn(){
@@ -66,14 +66,14 @@ function SignIn(){
             </NavLink>
             </div>
             </div>
-            <div className="hero_section"style={{
+            <div className="hero_section" style={{
     backgroundImage:`linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%),url(${imageUrl})`,
     minHeight:'100%',
     minWidth:'100%',
 
         }}>
               <div className="sign-container">
-              <h1>Sign In</h1>
+              <h1>Sign In/Sign Up</h1>
               {setShowError && <p> {error}</p>}
               <form onSubmit={handleSubmit} className='get-started'>
           <input type="email" name="email" placeholder="Email Address"
