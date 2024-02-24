@@ -2,17 +2,14 @@ import React from 'react';
 import './Footer.css'
 import './Home.css'
 function Links({ linkProp }){
-   // linkData ? linkData :
- // const links = ["FAQ",'Help Account','Account','Media Center','Investor Relations','Jobs','Ways to Watch','Terms of Use','Privacy','Cokkie Prefernces'];
+  
     return (
         <div>
-          {/* <ul className='footer-container'> */}
-            {/* {links.map((data,index) => ( */}
+          
                 <li  className='link-text'>
-                    <a href="javascript:void(0);alert('Sory i am Useless Link')" target="_blank" rel="noopener noreferrer">{linkProp}</a>
+                    <a href="#" target="_self" rel="noopener noreferrer">{linkProp}</a>
                 </li>
-            {/* ))} */}
-          {/* </ul> */}
+           
         </div>
     );
 }

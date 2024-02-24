@@ -39,15 +39,15 @@ function Movies( { selectedCategories }) {
       };
       setLoading(true)
       
-      fetch(`https://api.themoviedb.org/3/movie/${selectedCategories ? selectedCategories : 'now_playing'}?language=en-US&page=${localStorage.getItem('page')}`, options)
+      fetch(`https://api.themoviedb.org/3/movie/${selectedCategories ? selectedCategories : 'now_playing'}?language=en-US&page=${localStorage.getItem('page') ? localStorage.getItem('page') : page}`, options)
         .then(response => {
              return response.json();
-            })
-        .then(response => {
+            }) 
+        .then(response => { 
           
             let check = response.results;
-           setMovies(check || [])
-           setTotalPage(response.total_pages)
+           setMovies(check || []) 
+           setTotalPage(response.total_pages) 
            setLoading(false)
           
         })

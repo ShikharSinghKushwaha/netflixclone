@@ -1,5 +1,5 @@
 import React from "react";
-import { useState }from 'react'
+import { useState } from 'react'
 import './Home.css'
 import './Sign.css'
 import backgorund from './Images/IN-en-20240115-trifectadaily-perspective_alpha_website_small.jpg'
@@ -13,7 +13,7 @@ import mobile from './Images/IN-en-20240115-trifectadaily-perspective_alpha_webs
 import FooterLinks from './Footer'
 
 function SignIn(){
-    const imageUrl = window.innerWidth < 768  ? mobile : backgorund ;
+    const imageUrl = window.innerWidth < 768  ? mobile : backgorund;
     
     const navigate = useNavigate();
     const [ email, setEmail] = useState("")
@@ -31,7 +31,7 @@ function SignIn(){
             .then((auth) => {
                navigate('/dashboard')
                localStorage.setItem('sign-in',true)
-               console.log(auth)
+               
             }).catch((error) => {
                console.log(error.message)
                 setError("Invalid credentials ,Please recheck or Register")
@@ -47,7 +47,6 @@ function SignIn(){
       .then((auth) => {
         navigate('/dashboard')
        localStorage.setItem('registered',true)
-        console.log(auth)
       }).catch((error) => {console.log(error.message)
         setError("Password should be at least 6 characters: weak Password")
         if(email === email){

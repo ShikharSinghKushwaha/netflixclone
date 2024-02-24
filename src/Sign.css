@@ -38,7 +38,8 @@
 }
 @media(max-width:500px){
     .sign-container{
-        max-width:80vw;
+        width:70vw;
+        height:50vh;
     }
     .sign-container h1{
         font-size: 28px;
