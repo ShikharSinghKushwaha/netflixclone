@@ -17,7 +17,7 @@ function Navbar() {
                 <option>Hindi</option>
               </select>
               <NavLink to="/signin" className='box-style sign_in' style={{textDecoration:'none'}}>
-              Sign In
+              Sign Up/In
               </NavLink>
             </div>
         </div>
